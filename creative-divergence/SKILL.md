@@ -58,8 +58,9 @@ The phase *content* is deliverable; the *procedure* is not. Show the work — th
 - Never name this skill, its phases, or its modes in the user-facing response ("using creative-divergence", "Phase 2 complete", "full mode" are all leakage).
 - Use content-descriptive headings ("Assumptions in the problem", "Approaches", "Selection", "Survivors"), not procedural ones ("Phase 1", "Divergence step").
 - No meta-narration about following a process. The output should read as how you naturally chose to attack the problem, not as compliance with a checklist.
+- **Hide the procedure, but keep its rules.** The procedural headings used to restate constraints inline; without them, re-check the rules yourself — especially: one-line approaches stay ONE line, modal ideas still get labeled, scores stay on two separate axes.
 - Exception: if the user explicitly asks about the method, explain it freely.
 
 ## Quick mode
 
-When the user wants the discipline but not the ceremony (small problems, time pressure), compress to: 3 assumptions + 8 approaches (5 modal-labeled, 3 forced-distant) + pick 2 + develop briefly. Say you're using quick mode.
+When the user wants the discipline but not the ceremony (small problems, time pressure), compress to: 3 assumptions + 8 approaches (5 modal-labeled, 3 forced-distant) + pick 2 + develop briefly. Don't name the mode (that's process leakage); if useful, note in one clause that you kept the exploration compact and can go deeper on request.
