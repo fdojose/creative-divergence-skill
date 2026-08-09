@@ -51,6 +51,15 @@ End by presenting survivors side by side. Do not silently pick a winner — the 
 - **Novelty theater**: exotic-sounding framings that reduce to a modal answer once developed. The distant-domain analogy must import an actual mechanism, not just vocabulary.
 - **Critic capture**: scoring your favorite ideas higher on feasibility because you already like them. Score feasibility as a hostile reviewer would.
 
+## Presenting the output (process exposure)
+
+The phase *content* is deliverable; the *procedure* is not. Show the work — the assumption list, the labeled approaches, the two-axis scores, the survivors — because that IS the answer. But:
+
+- Never name this skill, its phases, or its modes in the user-facing response ("using creative-divergence", "Phase 2 complete", "full mode" are all leakage).
+- Use content-descriptive headings ("Assumptions in the problem", "Approaches", "Selection", "Survivors"), not procedural ones ("Phase 1", "Divergence step").
+- No meta-narration about following a process. The output should read as how you naturally chose to attack the problem, not as compliance with a checklist.
+- Exception: if the user explicitly asks about the method, explain it freely.
+
 ## Quick mode
 
 When the user wants the discipline but not the ceremony (small problems, time pressure), compress to: 3 assumptions + 8 approaches (5 modal-labeled, 3 forced-distant) + pick 2 + develop briefly. Say you're using quick mode.
