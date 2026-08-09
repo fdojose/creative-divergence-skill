@@ -35,6 +35,8 @@ Three eval iterations, each running realistic prompts through paired subagents (
 - **Iteration 1** (v1 vs. no skill): the skill's process contract went 16/16 vs. the baseline's 3/16. Baselines produced good *ideas* but converged on a single recommendation with no assumption analysis, no scoring, and no per-idea kill tests. It also surfaced a defect: outputs narrated the skill's own procedure.
 - **Iteration 2** (v2 vs. v1): the new process-exposure section fixed the narration — its assertions went 4/4 vs. 0/4 — at no cost in tokens or structure.
 - **Iteration 3** (v3 vs. v2, plus a new quick-mode eval): v3 went 27/27; v2's single miss was announcing "Quick mode" in its answer, the exact contradiction v3 reconciles.
+- **Iteration 4** (v4 vs. v3): kill conditions and the high-stakes checkpoint were perfectly discriminating wins (6/6 survivors with numeric abandon thresholds vs. 0/6), but the structural-match domain rule made runs drop domain naming in 2 of 3 runs.
+- **Iteration 5** (v5 vs. v4): the mandatory `[domain / dynamic]` tag format fixed it — v5 went 35/35 with the tags present in every run, including quick mode.
 
 The version history of this repo mirrors those iterations — see the commit log.
 
