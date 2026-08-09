@@ -37,6 +37,7 @@ Three eval iterations, each running realistic prompts through paired subagents (
 - **Iteration 3** (v3 vs. v2, plus a new quick-mode eval): v3 went 27/27; v2's single miss was announcing "Quick mode" in its answer, the exact contradiction v3 reconciles.
 - **Iteration 4** (v4 vs. v3): kill conditions and the high-stakes checkpoint were perfectly discriminating wins (6/6 survivors with numeric abandon thresholds vs. 0/6), but the structural-match domain rule made runs drop domain naming in 2 of 3 runs.
 - **Iteration 5** (v5 vs. v4): the mandatory `[domain / dynamic]` tag format fixed it — v5 went 35/35 with the tags present in every run, including quick mode.
+- **Iteration 6** (v6 vs. v5, plus a two-problems-in-one-conversation eval): 49/49 vs. 43/49. Pre-mortem-derived kill conditions and soft/hard assumption classification confirmed as clean discriminators; the in-conversation domain-freshness rule was compliant in every run but has not yet been observed under conditions where it binds.
 
 The version history of this repo mirrors those iterations — see the commit log.
 
