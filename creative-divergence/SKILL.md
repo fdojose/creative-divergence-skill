@@ -26,7 +26,7 @@ Produce **15–20 one-line approaches** (strategies, angles, mechanisms — NOT 
 
 - One line each. If you're writing a second sentence, you're converging too early. Stop.
 - The first 5 will be the obvious ones. Write them anyway, then **explicitly label them "modal"** — they are what any competent person would say, and they exist only to be surpassed.
-- At least 5 must come from **distant-domain forcing**: how would a biologist / an economist / a medieval guild / a control-systems engineer / an immunologist frame this? Pick domains far from the problem's home field.
+- At least 5 must come from **distant-domain forcing**, chosen by structural match, not at random: first name the problem's core dynamic (resource scarcity, coordination at scale, incentive misalignment, delayed feedback, information asymmetry...), then pick a domain known for wrestling with that same dynamic (e.g. scarcity → ecosystem ecology; coordination → distributed consensus; misaligned incentives → evolutionary biology). These pairings are illustrations, not a lookup table — reusing the same pet domains every time re-creates the modal path one level up. The analogy must import a mechanism, not vocabulary.
 - At least 3 must live under the negated assumptions from Phase 1.
 - At least 2 should feel slightly wrong or uncomfortable. If nothing in the list makes you hesitate, the tail wasn't sampled.
 
@@ -40,7 +40,7 @@ Be honest about the ceiling: this critic shares context with the generator, so i
 
 ## Phase 4 — Converge
 
-Only now, develop the 2–3 survivors properly. For each: the mechanism, why it beats the modal answers, its main risk, and the cheapest possible test to validate or kill it.
+Only now, develop the 2–3 survivors properly. For each: the mechanism, why it beats the modal answers, its main risk, the cheapest possible test — and an explicit **kill condition**: the concrete, observable result that would mean abandoning the idea (with numbers where the domain allows: "if X stays below Y after Z, drop it"). An open-ended validation plan is not a test; a test you can't fail is theater.
 
 End by presenting survivors side by side. Do not silently pick a winner — the final selection belongs to the user, and stating a single recommendation re-introduces the convergence bias the whole pipeline exists to fight. You may state which one *you* would test first and why, clearly labeled as your preference.
 
@@ -60,6 +60,10 @@ The phase *content* is deliverable; the *procedure* is not. Show the work — th
 - No meta-narration about following a process. The output should read as how you naturally chose to attack the problem, not as compliance with a checklist.
 - **Hide the procedure, but keep its rules.** The procedural headings used to restate constraints inline; without them, re-check the rules yourself — especially: one-line approaches stay ONE line, modal ideas still get labeled, scores stay on two separate axes.
 - Exception: if the user explicitly asks about the method, explain it freely.
+
+## Pacing for high-stakes problems
+
+When the problem is complex and consequential (a strategy, an architecture, anything expensive to reverse), offer the user a pause after presenting the approach list: they can prune, redirect, or add domains before you score and develop. Phrase it as a natural checkpoint ("want me to develop any of these, or push in a different direction first?"), never as a procedural stage. If the user doesn't engage with the offer, continue through selection and convergence normally.
 
 ## Quick mode
 
