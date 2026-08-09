@@ -13,6 +13,8 @@ The pipeline has four phases. Phases 1–3 are divergence; phase 4 is convergenc
 
 List every assumption embedded in the problem as stated. For each, ask: if this were false, would the solution space change entirely?
 
+Classify each assumption as **soft** (habits, traditions, industry norms, "how it's always been done") or **hard** (true invariants: laws of physics, arithmetic). Focus negations on the soft ones — negating true invariants generates noise, not strategy. But be skeptical of the "hard" label itself: before classifying anything as hard, ask who enforces it and what changing it would cost. Regulations, budgets, and "technical impossibilities" are usually expensive, not impossible — those stay negotiable, and labeling them hard is the cheapest way to dodge attacking the frame.
+
 Output format:
 - 5–10 assumptions, one line each
 - Mark the 2–3 whose negation opens the largest new territory
@@ -26,13 +28,18 @@ Produce **15–20 one-line approaches** (strategies, angles, mechanisms — NOT 
 
 - One line each. If you're writing a second sentence, you're converging too early. Stop.
 - The first 5 will be the obvious ones. Write them anyway, then **explicitly label them "modal"** — they are what any competent person would say, and they exist only to be surpassed.
-- At least 5 must come from **distant-domain forcing**, chosen by structural match, not at random: first name the problem's core dynamic (resource scarcity, coordination at scale, incentive misalignment, delayed feedback, information asymmetry...), then pick a domain known for wrestling with that same dynamic (e.g. scarcity → ecosystem ecology; coordination → distributed consensus; misaligned incentives → evolutionary biology). **Name the domain and the dynamic it matches in the list entry itself** — e.g. "[ecology / scarcity] ..." — the tag is accountability for the import, not vocabulary decoration; an unnamed import can't be audited. Vary the domains across problems (reusing the same pet domains every time re-creates the modal path one level up), but varying means picking different domains, never dropping the names.
+- At least 5 must come from **distant-domain forcing**, chosen by structural match, not at random: first name the problem's core dynamic (resource scarcity, coordination at scale, incentive misalignment, delayed feedback, information asymmetry...), then pick a domain known for wrestling with that same dynamic (e.g. scarcity → ecosystem ecology; coordination → distributed consensus; misaligned incentives → evolutionary biology). **Name the domain and the dynamic it matches in the list entry itself** — e.g. "[ecology / scarcity] ..." — the tag is accountability for the import, not vocabulary decoration; an unnamed import can't be audited. Vary the domains across problems (reusing the same pet domains every time re-creates the modal path one level up), and within a conversation never reuse a domain you already drew on for an earlier problem — pick fresh ones each time, of your own choosing. Varying means picking different domains, never dropping the names.
 - At least 3 must live under the negated assumptions from Phase 1.
 - At least 2 should feel slightly wrong or uncomfortable. If nothing in the list makes you hesitate, the tail wasn't sampled.
 
 ## Phase 3 — Select for novelty and feasibility SEPARATELY
 
-Score every approach on two independent axes (1–5 each): **novelty** (distance from the modal answers) and **feasibility** (could it actually work). Never combine them into one score — a single score lets conventional ideas win every time.
+Score every approach on two independent axes (1–5 each), against these anchors:
+
+- **Novelty**: 1 = standard industry playbook / best practice; 3 = unconventional in this sector; 5 = counter-intuitive or unheard of in this domain.
+- **Feasibility**: 1 = requires major regulatory, technical, or capital breakthroughs; 3 = plausible with moderate effort or adaptation; 5 = executable tomorrow with the existing team and tools.
+
+Never combine them into one score — a single score lets conventional ideas win every time.
 
 Selection rule: advance the 2–3 approaches that are **high-novelty AND at-least-plausible**. Kill high-feasibility/low-novelty candidates without mercy — the user can get those anywhere. Keep one "wild card" (novelty 5, feasibility 2) alive if any exists; note it as such.
 
@@ -40,7 +47,7 @@ Be honest about the ceiling: this critic shares context with the generator, so i
 
 ## Phase 4 — Converge
 
-Only now, develop the 2–3 survivors properly. For each: the mechanism, why it beats the modal answers, its main risk, the cheapest possible test — and an explicit **kill condition**: the concrete, observable result that would mean abandoning the idea (with numbers where the domain allows: "if X stays below Y after Z, drop it"). An open-ended validation plan is not a test; a test you can't fail is theater.
+Only now, develop the 2–3 survivors properly. For each: the mechanism, why it beats the modal answers, its main risk, the cheapest possible test — and before setting the kill condition, a one-line **pre-mortem**: "it's 6 months from now and this failed badly — what was the blind spot?" Then derive the **kill condition** directly from that blind spot: the concrete, observable result that would mean abandoning the idea (with numbers where the domain allows: "if X stays below Y after Z, drop it"). A kill condition invented without the pre-mortem tends to be one designed to pass; an open-ended validation plan is not a test; a test you can't fail is theater.
 
 End by presenting survivors side by side. Do not silently pick a winner — the final selection belongs to the user, and stating a single recommendation re-introduces the convergence bias the whole pipeline exists to fight. You may state which one *you* would test first and why, clearly labeled as your preference.
 
