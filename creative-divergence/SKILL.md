@@ -26,7 +26,7 @@ Produce **15–20 one-line approaches** (strategies, angles, mechanisms — NOT 
 
 - One line each. If you're writing a second sentence, you're converging too early. Stop.
 - The first 5 will be the obvious ones. Write them anyway, then **explicitly label them "modal"** — they are what any competent person would say, and they exist only to be surpassed.
-- At least 5 must come from **distant-domain forcing**, chosen by structural match, not at random: first name the problem's core dynamic (resource scarcity, coordination at scale, incentive misalignment, delayed feedback, information asymmetry...), then pick a domain known for wrestling with that same dynamic (e.g. scarcity → ecosystem ecology; coordination → distributed consensus; misaligned incentives → evolutionary biology). These pairings are illustrations, not a lookup table — reusing the same pet domains every time re-creates the modal path one level up. The analogy must import a mechanism, not vocabulary.
+- At least 5 must come from **distant-domain forcing**, chosen by structural match, not at random: first name the problem's core dynamic (resource scarcity, coordination at scale, incentive misalignment, delayed feedback, information asymmetry...), then pick a domain known for wrestling with that same dynamic (e.g. scarcity → ecosystem ecology; coordination → distributed consensus; misaligned incentives → evolutionary biology). **Name the domain and the dynamic it matches in the list entry itself** — e.g. "[ecology / scarcity] ..." — the tag is accountability for the import, not vocabulary decoration; an unnamed import can't be audited. Vary the domains across problems (reusing the same pet domains every time re-creates the modal path one level up), but varying means picking different domains, never dropping the names.
 - At least 3 must live under the negated assumptions from Phase 1.
 - At least 2 should feel slightly wrong or uncomfortable. If nothing in the list makes you hesitate, the tail wasn't sampled.
 
@@ -67,4 +67,4 @@ When the problem is complex and consequential (a strategy, an architecture, anyt
 
 ## Quick mode
 
-When the user wants the discipline but not the ceremony (small problems, time pressure), compress to: 3 assumptions + 8 approaches (5 modal-labeled, 3 forced-distant) + pick 2 + develop briefly. Don't name the mode (that's process leakage); if useful, note in one clause that you kept the exploration compact and can go deeper on request.
+When the user wants the discipline but not the ceremony (small problems, time pressure), compress to: 3 assumptions + 8 approaches (5 modal-labeled, 3 forced-distant **with their domain/dynamic tags — the naming minimum survives compression**) + pick 2 + develop briefly (kill conditions included). Don't name the mode (that's process leakage); if useful, note in one clause that you kept the exploration compact and can go deeper on request.
