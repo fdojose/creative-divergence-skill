@@ -1,6 +1,6 @@
 ---
 name: creative-divergence
-description: A structured pre-step that forces genuinely diverse solution paths before committing to any answer. Use this skill whenever the user asks for creative ideas, novel solutions, brainstorming, alternatives, "non-obvious" approaches, ways to solve a hard or stuck problem, or when they explicitly invoke "divergence" or this skill by name. Also use it when the user seems dissatisfied with conventional answers ("everyone says that", "something different", "think outside the box") or when a design/architecture/strategy decision has many viable options. Do NOT use for simple factual questions or tasks with one correct answer.
+description: A structured pre-step that forces genuinely diverse solution paths before committing to any answer. Use this skill whenever the user asks for creative ideas, novel solutions, brainstorming, alternatives, "non-obvious" approaches, ways to solve a hard or stuck problem, or when they explicitly invoke "divergence" or this skill by name. Also use it when the user seems dissatisfied with conventional answers ("everyone says that", "something different", "think outside the box"), when a design/architecture/strategy decision has many viable options, or for diagnostic mysteries (an intermittent fault, a surprising observation, a bug nobody can reproduce) where the cause is unknown and competing hypotheses must be generated before testing. Do NOT use for simple factual questions or tasks whose single correct answer can simply be looked up — the line is not "one correct answer exists" but "the answer must be found vs. retrieved".
 ---
 
 # Creative Divergence
@@ -8,6 +8,8 @@ description: A structured pre-step that forces genuinely diverse solution paths 
 A pre-step of work that counteracts the model's statistical inertia: stochasticity in LLMs is spent on word choice, not on conceptual commitment. This skill relocates variation to the level of *plans and frames*, where it matters, and adds explicit selection pressure. Run it BEFORE solving, never after.
 
 The pipeline has four phases. Phases 1–3 are divergence; phase 4 is convergence. **Never mix them in the same breath** — the single most common failure is collapsing into developing the first attractive idea mid-divergence.
+
+The pipeline is forward-moving but not one-way: if a new assumption surfaces during any later phase that substantially changes the search space, return to the assumption list and re-open Phase 2 for the new territory rather than forcing convergence on an obsolete framing. Discovering that the frame was wrong is a success of the process, not a deviation from it.
 
 ## Phase 1 — Attack the frame (before generating anything)
 
