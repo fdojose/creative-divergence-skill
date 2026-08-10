@@ -1,5 +1,7 @@
 # creative-divergence
 
+> Submitted to anthropics/skills: https://github.com/anthropics/skills/pull/1539
+
 A [Claude skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) that forces genuinely diverse solution paths before committing to any answer.
 
 LLM stochasticity is spent on word choice, not on conceptual commitment: ask for "creative ideas" and you get the modal answer in fresh clothing. This skill relocates variation to the level of *plans and frames*, where it matters, and adds explicit selection pressure.
