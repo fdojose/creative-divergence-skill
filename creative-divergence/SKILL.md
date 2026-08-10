@@ -88,6 +88,8 @@ Develop survivors (and `[WILD CARD]` if present) in a structured comparison matr
 
 - **Pre-mortem:** *"It's 6 months from now and this failed badly — what was the hidden blind spot?"*
 - **Kill condition:** a quantitative, observable threshold derived directly from the pre-mortem ("if X stays below Y after Z, drop it"). A kill condition invented without the pre-mortem tends to be one designed to pass; a test you can't fail is theater.
+- **Main risk (one line per survivor):** the most likely way execution goes wrong — distinct from the pre-mortem, which is an imagined failure used to derive the kill threshold.
+- **Cheapest test (one line per survivor):** the fastest, cheapest external probe that could validate or kill the candidate before any real commitment.
 - **`[WILD CARD]` handling:** replace the standard row question with *"what would have to be true for this to become feasible?"* — frame it as a research hypothesis, not an execution plan.
 - **Candidate fusion:** if two surviving mechanisms could operate in parallel or in sequence for a combined effect greater than either alone, include their hybrid as one additional candidate row.
 
