@@ -38,6 +38,9 @@ Three eval iterations, each running realistic prompts through paired subagents (
 - **Iteration 4** (v4 vs. v3): kill conditions and the high-stakes checkpoint were perfectly discriminating wins (6/6 survivors with numeric abandon thresholds vs. 0/6), but the structural-match domain rule made runs drop domain naming in 2 of 3 runs.
 - **Iteration 5** (v5 vs. v4): the mandatory `[domain / dynamic]` tag format fixed it — v5 went 35/35 with the tags present in every run, including quick mode.
 - **Iteration 6** (v6 vs. v5, plus a two-problems-in-one-conversation eval): 49/49 vs. 43/49. Pre-mortem-derived kill conditions and soft/hard assumption classification confirmed as clean discriminators; the in-conversation domain-freshness rule was compliant in every run but has not yet been observed under conditions where it binds.
+- **Iterations 7–8** (v7 clustering; v8 diagnostic scope + re-entrancy): direct A/B grading interrupted by an infrastructure outage; both changes were validated downstream — v8 went 38/38 and 37/38 as the baseline of iterations 9–10 (including 12/12 on a new diagnostic-mystery eval with a planted wrong diagnosis), and v7's clustering became v9.1's two-pass step.
+- **Iteration 9** (an independent rewrite, "divergence-compass", vs. v8): the rewrite lost 33/38 to 38/38 — three of its five misses were deliberate spec cuts (dropping the cheapest-test requirement, compressing quick mode), two were run-level.
+- **Iteration 10** (v9.1, the merge of the rewrite's structure into the validated contract, vs. v8): 38/38 vs. 37/38 — the merge absorbed the compass's typology, clustering, adaptive depth, and comparison matrix without giving back any of the contract; the compressed quick mode (3 modal + 2 imports + 1 flipped) became the intended spec.
 
 The version history of this repo mirrors those iterations — see the commit log.
 
