@@ -5,77 +5,112 @@ description: A structured pre-step that forces genuinely diverse solution paths 
 
 # Creative Divergence
 
-A pre-step of work that counteracts the model's statistical inertia: stochasticity in LLMs is spent on word choice, not on conceptual commitment. This skill relocates variation to the level of *plans and frames*, where it matters, and adds explicit selection pressure. Run it BEFORE solving, never after.
+A pre-step protocol that counteracts LLM completion bias and statistical inertia. Stochasticity in LLMs is spent on token choice, not conceptual strategy. This protocol relocates variation to the level of frames and mechanisms, applying strict selection pressure BEFORE solving. Never mix divergence and convergence in the same breath.
 
-The pipeline has four phases. Phases 1–3 are divergence; phase 4 is convergence. **Never mix them in the same breath** — the single most common failure is collapsing into developing the first attractive idea mid-divergence.
+---
 
-The pipeline is forward-moving but not one-way: if a new assumption surfaces during any later phase that substantially changes the search space, return to the assumption list and re-open Phase 2 for the new territory rather than forcing convergence on an obsolete framing. Discovering that the frame was wrong is a success of the process, not a deviation from it.
+## Operational Execution Rules
 
-## Phase 1 — Attack the frame (before generating anything)
+1. **Adaptive Execution Depth:**
+   - *Low Complexity / Reversible:* Compress to 3 assumptions + 6 approaches + 2 survivors (see Quick Mode).
+   - *Standard / Complex:* Full execution across all 4 phases.
+   - *High-Stakes / Irreversible Strategy:* Full execution, with a pause offered after Phase 2 so the user can prune or redirect before scoring. Phrase it as a natural checkpoint, never as a procedural stage; if the user doesn't engage, continue normally.
 
-List every assumption embedded in the problem as stated. For each, ask: if this were false, would the solution space change entirely?
+   *Assess complexity by: decision reversibility, number of stakeholders, magnitude of investment. If uncertain, default to full execution.*
 
-Classify each assumption as **soft** (habits, traditions, industry norms, "how it's always been done") or **hard** (true invariants: laws of physics, arithmetic). Focus negations on the soft ones — negating true invariants generates noise, not strategy. But be skeptical of the "hard" label itself: before classifying anything as hard, ask who enforces it and what changing it would cost. Regulations, budgets, and "technical impossibilities" are usually expensive, not impossible — those stay negotiable, and labeling them hard is the cheapest way to dodge attacking the frame.
+2. **Backtracking:** The pipeline is forward-moving but not one-way. If new constraints, evidence, or assumptions surface mid-run that substantially change the search space, say so plainly ("New information surfaced: [X] — revisiting the framing...") and re-open Phases 1 and 2 for the new territory rather than forcing convergence on an obsolete framing. Discovering that the frame was wrong is a success of the process, not a deviation from it.
 
-Output format:
-- 5–10 assumptions, one line each
-- Mark the 2–3 whose negation opens the largest new territory
-- Restate the problem 2–3 alternative ways, at least one under a negated assumption
+3. **Process Exposure & Honesty:**
+   - **Default execution:** Render deliverables using content-descriptive headings ("Assumptions in the problem", "Approaches", "Selection", "Survivors"). Signal transitions through content ("With assumptions surfaced, here are candidate approaches...") rather than procedural labels. Never name this skill, its phases, or its modes in the user-facing response; no meta-narration about following a process ("Phase 1 complete" is leakage).
+   - **Hide the procedure, but keep its rules:** without procedural headings restating constraints inline, re-check them yourself — one-line approaches stay ONE line, modal ideas still get labeled, scores stay on two separate axes, tags stay visible.
+   - **Direct query exception:** If the user explicitly asks how the answer was generated or how the method works, explain the underlying protocol fully, accurately, and transparently — no evasion, no decorative analogies.
 
-Do not solve anything yet. The purpose is to discover that the breakthrough may live in *re-posing* the question, not answering it as posed.
+---
 
-## Phase 2 — Generate approaches, not answers
+## Phase 1 — Attack the Frame
 
-Produce **15–20 one-line approaches** (strategies, angles, mechanisms — NOT developed solutions). Rules:
+List every assumption embedded in the problem as stated. For each, ask: if this were false, would the solution space change entirely? Apply the **Empirical Reality Test**:
 
-- One line each. If you're writing a second sentence, you're converging too early. Stop.
-- The first 5 will be the obvious ones. Write them anyway, then **explicitly label them "modal"** — they are what any competent person would say, and they exist only to be surpassed.
-- At least 5 must come from **distant-domain forcing**, chosen by structural match, not at random: first name the problem's core dynamic (resource scarcity, coordination at scale, incentive misalignment, delayed feedback, information asymmetry...), then pick a domain known for wrestling with that same dynamic (e.g. scarcity → ecosystem ecology; coordination → distributed consensus; misaligned incentives → evolutionary biology). **Name the domain and the dynamic it matches in the list entry itself** — e.g. "[ecology / scarcity] ..." — the tag is accountability for the import, not vocabulary decoration; an unnamed import can't be audited. Vary the domains across problems (reusing the same pet domains every time re-creates the modal path one level up), and within a conversation never reuse a domain you already drew on for an earlier problem — pick fresh ones each time, of your own choosing. Varying means picking different domains, never dropping the names.
-- At least 3 must live under the negated assumptions from Phase 1.
-- At least 2 should feel slightly wrong or uncomfortable. If nothing in the list makes you hesitate, the tail wasn't sampled.
+- **Hard invariants:** constrained by physical law, formal logic, or arithmetic. (Changing it breaks reality.)
+- **Soft conventions:** constrained by human habits, traditions, regulations, budgets, or industry norms. (You can imagine a world where it differs without breaking physical law.)
 
-## Phase 3 — Select for novelty and feasibility SEPARATELY
+*Rule:* Focus negations exclusively on soft conventions. Before labeling anything hard, ask who enforces it and what changing it would cost — regulations, budgets, and "technical impossibilities" are usually expensive, not impossible, and labeling them hard is the cheapest way to dodge the frame attack.
 
-Before scoring, cluster the approaches by underlying causal mechanism. If two approaches belong to the same mechanism family, merge them and keep the stronger representative — and note that same-mechanism duplicates are usually NOT paraphrases ("gamify participation" and "add leaderboards" read differently but are one mechanism). Score the merged list, not the raw one.
+**Output:**
+- 5–10 assumptions, one line each, classified hard/soft.
+- Mark the 2–3 highest-leverage assumptions with **`[HIGH LEVERAGE]`**.
+- Restate the problem 2–3 alternative ways, at least one under a negated `[HIGH LEVERAGE]` assumption.
 
-Score every approach on two independent axes (1–5 each), against these anchors:
+Do not solve anything yet. The breakthrough may live in re-posing the question, not answering it as posed.
 
-- **Novelty**: 1 = standard industry playbook / best practice; 3 = unconventional in this sector; 5 = counter-intuitive or unheard of in this domain.
-- **Feasibility**: 1 = requires major regulatory, technical, or capital breakthroughs; 3 = plausible with moderate effort or adaptation; 5 = executable tomorrow with the existing team and tools.
+---
 
-Never combine them into one score — a single score lets conventional ideas win every time.
+## Phase 2 — Generate Approaches, Not Answers
 
-Selection rule: advance the 2–3 approaches that are **high-novelty AND at-least-plausible**. Kill high-feasibility/low-novelty candidates without mercy — the user can get those anywhere. Keep one "wild card" (novelty 5, feasibility 2) alive if any exists; note it as such.
+Produce single-line approaches focused on discovering distinct causal mechanisms rather than generating volume. Target 15–20 for complex problems; you may stop early only if mechanism families are genuinely exhausted, and stopping early requires explicitly stating the families already covered and why further approaches would duplicate them.
 
-Be honest about the ceiling: this critic shares context with the generator, so it is self-review, not independent selection. Flag this to the user when stakes are high, and suggest an external verifier (run the code, check the math, test with real users) whenever the domain allows one.
+**Strict constraints:**
+
+- **Single line limit.** Exactly one line per approach: name the mechanism, include the tag, save all elaboration for Phase 4. If you're writing a second sentence, you're converging too early. Stop.
+- **Modal baseline (~5) — `[MODAL]`:** generate these first — the obvious answers any competent person would give, explicitly labeled. Modal is a category, not a position in the list; they exist only to be surpassed.
+- **Distant-domain imports (≥5) — `[domain / dynamic]`:** first name the problem's core dynamic (resource scarcity, incentive misalignment, information asymmetry, coordination at scale, delayed feedback...), then select a field that has evolved specialized mechanisms for that exact dynamic — if none comes to mind, ask: *"what field has survived or optimized this dynamic under extreme pressure?"* — and tag inline — e.g. `[tax law / arbitrage]`. The tag is accountability for the import, not vocabulary decoration; an unnamed import can't be audited. Import the underlying mechanism, never the surface vocabulary. Never reuse a domain within the same conversation, and vary domains across problems — settling into pet domains (whether your own favorites or examples you've seen listed) re-creates the modal path one level up.
+- **Negated assumptions (≥3) — `[FLIPPED]`:** approaches that exist only under flipped `[HIGH LEVERAGE]` assumptions from Phase 1.
+- **Tail sampling (≥2) — `[EDGE]`:** approaches that feel uncomfortable or counter-intuitive. If nothing in the list makes you hesitate, the tail wasn't sampled.
+
+---
+
+## Phase 3 — Deduplicate and Select Separately
+
+1. **Two-pass causal mechanism clustering** (same-mechanism duplicates are usually NOT paraphrases — "gamify participation" and "add leaderboards" read differently but are one mechanism):
+   - **Pass 1 — shared mechanism:** group by root lever. Ask: *"stripped of surface details, is the core lever identical?"* If yes, combine into the strongest representative.
+   - **Pass 2 — coexistence test:** for remaining candidates, ask: *"could these coexist as independent components in the same solution?"* If no (they compete for the same resource or execution slot), combine; if yes, keep both.
+   Score the merged list, not the raw one.
+
+2. **Independent two-axis scoring** (1–5 each; never combine or average — a single score lets conventional ideas win every time):
+   - **Novelty:** 1 = standard industry playbook; 3 = unconventional in this sector; 5 = counter-intuitive or unheard of in the target domain.
+   - **Feasibility:** 1 = requires major regulatory, technical, or capital breakthroughs; 3 = plausible with moderate effort; 5 = executable tomorrow with the existing team and tools. Anchor to the user's context; state explicit budget/timeline assumptions if unknown.
+
+3. **Selection rule:** advance 2–3 candidates with **novelty ≥3 AND feasibility ≥3**. Kill low-novelty / high-feasibility candidates without mercy — the user can get those anywhere.
+
+4. **Wild card:** keep one novelty-5 / feasibility-2 candidate as `[WILD CARD]` if present.
+
+Be honest about the ceiling: this critic shares context with the generator, so it is self-review, not independent selection. Flag this when stakes are high, and suggest an external verifier (run the code, check the math, test with real users) whenever the domain allows one.
+
+---
 
 ## Phase 4 — Converge
 
-Only now, develop the 2–3 survivors properly. For each: the mechanism, why it beats the modal answers, its main risk, the cheapest possible test — and before setting the kill condition, a one-line **pre-mortem**: "it's 6 months from now and this failed badly — what was the blind spot?" Then derive the **kill condition** directly from that blind spot: the concrete, observable result that would mean abandoning the idea (with numbers where the domain allows: "if X stays below Y after Z, drop it"). A kill condition invented without the pre-mortem tends to be one designed to pass; an open-ended validation plan is not a test; a test you can't fail is theater.
+Develop survivors (and `[WILD CARD]` if present) in a structured comparison matrix:
 
-End by presenting survivors side by side. Do not silently pick a winner — the final selection belongs to the user, and stating a single recommendation re-introduces the convergence bias the whole pipeline exists to fight. You may state which one *you* would test first and why, clearly labeled as your preference.
+| Candidate | Mechanism & Advantage | Novelty | Feasibility | Pre-Mortem | Kill Condition |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| [Name] | Plain-language mechanism & why it beats the `[MODAL]` baseline | X/5 | Y/5 | *"Failed in 6 months because..."* | Concrete, observable threshold |
 
-## Anti-patterns to watch for in yourself
+- **Pre-mortem:** *"It's 6 months from now and this failed badly — what was the hidden blind spot?"*
+- **Kill condition:** a quantitative, observable threshold derived directly from the pre-mortem ("if X stays below Y after Z, drop it"). A kill condition invented without the pre-mortem tends to be one designed to pass; a test you can't fail is theater.
+- **`[WILD CARD]` handling:** replace the standard row question with *"what would have to be true for this to become feasible?"* — frame it as a research hypothesis, not an execution plan.
+- **Candidate fusion:** if two surviving mechanisms could operate in parallel or in sequence for a combined effect greater than either alone, include their hybrid as one additional candidate row.
 
-- **Premature convergence**: developing an idea during Phase 2. One line means one line.
-- **Fake diversity**: same-mechanism ideas counted as different approaches. The Phase 3 clustering step exists for this — apply it; paraphrase is the easy case, shared mechanism behind different words is the one that slips through.
-- **Novelty theater**: exotic-sounding framings that reduce to a modal answer once developed. The distant-domain analogy must import an actual mechanism, not just vocabulary.
-- **Critic capture**: scoring your favorite ideas higher on feasibility because you already like them. Score feasibility as a hostile reviewer would.
+Conclude by outlining trade-offs and stating your personal preference, clearly labeled as such, leaving the final selection to the user — a single silent recommendation re-introduces the convergence bias this whole protocol exists to fight. Offer natural next steps in plain language (develop one further, prune by a constraint, push deeper in one domain, flip another assumption, fuse two survivors, or re-pose the problem).
 
-## Presenting the output (process exposure)
+---
 
-The phase *content* is deliverable; the *procedure* is not. Show the work — the assumption list, the labeled approaches, the two-axis scores, the survivors — because that IS the answer. But:
+## Anti-Patterns to Avoid
 
-- Never name this skill, its phases, or its modes in the user-facing response ("using creative-divergence", "Phase 2 complete", "full mode" are all leakage).
-- Use content-descriptive headings ("Assumptions in the problem", "Approaches", "Selection", "Survivors"), not procedural ones ("Phase 1", "Divergence step").
-- No meta-narration about following a process. The output should read as how you naturally chose to attack the problem, not as compliance with a checklist.
-- **Hide the procedure, but keep its rules.** The procedural headings used to restate constraints inline; without them, re-check the rules yourself — especially: one-line approaches stay ONE line, modal ideas still get labeled, scores stay on two separate axes.
-- Exception: if the user explicitly asks about the method, explain it freely.
+- **Premature convergence:** elaborating an idea during Phase 2. One line means one line.
+- **Fake diversity:** same-mechanism ideas counted as different approaches. Apply the two-pass clustering strictly; paraphrase is the easy case, shared mechanism behind different words is the one that slips through.
+- **Novelty theater:** exotic vocabulary that reduces to the modal baseline once developed. Imports must bring structural mechanisms.
+- **Critic capture:** over-scoring feasibility on preferred ideas. Score as an adversarial auditor.
+- **False hardness:** labeling regulations, budgets, or technical difficulties as hard invariants. They are expensive, not impossible — treat them as soft.
 
-## Pacing for high-stakes problems
+---
 
-When the problem is complex and consequential (a strategy, an architecture, anything expensive to reverse), offer the user a pause after presenting the approach list: they can prune, redirect, or add domains before you score and develop. Phrase it as a natural checkpoint ("want me to develop any of these, or push in a different direction first?"), never as a procedural stage. If the user doesn't engage with the offer, continue through selection and convergence normally.
+## Quick Mode (Compressed)
 
-## Quick mode
+When time is limited or complexity is low:
 
-When the user wants the discipline but not the ceremony (small problems, time pressure), compress to: 3 assumptions + 8 approaches (5 modal-labeled, 3 forced-distant **with their domain/dynamic tags — the naming minimum survives compression**) + pick 2 + develop briefly (kill conditions included). Don't name the mode (that's process leakage); if useful, note in one clause that you kept the exploration compact and can go deeper on request.
+- **Phase 1:** 3 assumptions (with `[HIGH LEVERAGE]`)
+- **Phase 2:** 6 approaches — 3 `[MODAL]`, 2 `[domain / dynamic]` imports, 1 `[FLIPPED]` — the tagging minimum survives compression
+- **Phases 3 & 4:** 2 survivors with pre-mortems and kill conditions
+
+Don't name the mode (that's process leakage). If the query is clearly small, note in one clause that you kept the exploration focused and can expand any direction on request.
