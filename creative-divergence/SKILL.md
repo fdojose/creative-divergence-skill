@@ -34,6 +34,8 @@ Produce **15–20 one-line approaches** (strategies, angles, mechanisms — NOT 
 
 ## Phase 3 — Select for novelty and feasibility SEPARATELY
 
+Before scoring, cluster the approaches by underlying causal mechanism. If two approaches belong to the same mechanism family, merge them and keep the stronger representative — and note that same-mechanism duplicates are usually NOT paraphrases ("gamify participation" and "add leaderboards" read differently but are one mechanism). Score the merged list, not the raw one.
+
 Score every approach on two independent axes (1–5 each), against these anchors:
 
 - **Novelty**: 1 = standard industry playbook / best practice; 3 = unconventional in this sector; 5 = counter-intuitive or unheard of in this domain.
@@ -54,7 +56,7 @@ End by presenting survivors side by side. Do not silently pick a winner — the 
 ## Anti-patterns to watch for in yourself
 
 - **Premature convergence**: developing an idea during Phase 2. One line means one line.
-- **Fake diversity**: paraphrases of the same idea counted as different approaches. Before scoring, ask of every pair: do these differ in *mechanism*, or only in wording? Merge duplicates.
+- **Fake diversity**: same-mechanism ideas counted as different approaches. The Phase 3 clustering step exists for this — apply it; paraphrase is the easy case, shared mechanism behind different words is the one that slips through.
 - **Novelty theater**: exotic-sounding framings that reduce to a modal answer once developed. The distant-domain analogy must import an actual mechanism, not just vocabulary.
 - **Critic capture**: scoring your favorite ideas higher on feasibility because you already like them. Score feasibility as a hostile reviewer would.
 
