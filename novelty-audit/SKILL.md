@@ -1,0 +1,46 @@
+---
+name: novelty-audit
+description: An adversarial verification protocol for novelty and whitespace claims. Use whenever a document, pitch, grant application, paper, or plan asserts that something is new, unexplored, "first", "nobody does this", or a market/research gap — before it is published or submitted. Also use when the user asks to check whether an idea already exists, find prior art, or map the whitespace around a topic. The deliverable is a per-claim verdict with citations, not new ideas. Do NOT use for generating ideas (that is creative-divergence's job) or for general fact-checking of non-novelty claims.
+---
+
+# Novelty Audit
+
+Every novelty claim will eventually face an adversary whose entire job is one search: the grant reviewer, the referee, the investor's analyst, the patent examiner. This protocol runs the adversary's move first. Its premise is empirical: in literature-heavy domains, unaided priors misjudge what exists roughly as often as not — confidently seeing whitespace where there are literature reviews. The audit's primary product is prevented embarrassment; discovered whitespace is upside.
+
+## Phase 1 — Extract the claims
+
+List every explicit or implicit novelty claim in the input (a document, a pitch, or a stated idea). Implicit ones count: "we are the only", "unlike existing solutions", "there is no tool that", a gap statement in a paper, a differentiation slide. Number them. If the user supplied a topic rather than a document, ask what is being claimed as new, or derive the 2–4 strongest implied claims and confirm them in one line.
+
+## Phase 2 — Blind priors (before any search)
+
+For each claim, state your own belief BEFORE searching: FULL (counterexamples exist), EMPTY (genuinely unclaimed), or UNKNOWN — with one line of reasoning and a confidence (low/med/high). This is the control: the audit's value is measured by how many verdicts differ from these priors. Never skip or backfill this step; committed priors are what make the final report honest.
+
+## Phase 3 — Adversarial sweep
+
+For each claim, 1–3 queries designed to FIND the counterexample, not to confirm emptiness — search as the hostile reviewer would. Rules inherited from tested ancestors:
+
+- Validate each query's aim: state in one line what distribution it measured; a query that returned adjacent marketing or a different actor's problem is MISFIRED and excluded.
+- Match on mechanism, not vocabulary: a counterexample described in different words still kills the claim.
+- Include at least one query in the claim's home language/region when the claim is regional.
+
+## Phase 4 — Verdicts
+
+Each claim gets exactly one verdict, with evidence:
+
+- **KILLED** — a counterexample exists; cite it. Include the strongest one found, not the first.
+- **SHARPENED** — the broad claim dies but a narrower edge survives (region, mechanism, combination, regulatory context). Rewrite the claim to its defensible form; cite what killed the broad version and what the sweep found nothing against.
+- **UNTRIAGED** — nothing found, but absence is not yet evidence: state which of the three empty-cell causes remains unexcluded (unexplored / explored-and-died / invisible to the index: other language, practice-only, paywalled) and the single cheapest step that would triage it (a regional query, an expert to ask, a database to check).
+- A claim only earns **SURVIVES** after a graveyard pass: search for failed attempts ("X failed", "X shut down", "X challenges") — a space can be empty because it is a graveyard, and claiming a graveyard as whitespace is the second-most embarrassing outcome available.
+
+Never promote absence to proof. "Not found" means "not the consensus of the indexed record", nothing more. Every KILLED and SHARPENED verdict must carry a citation; a verdict without evidence is a prior wearing a costume.
+
+## Phase 5 — Deliverable
+
+A claims table: claim → blind prior → evidence → verdict → rewritten claim (for SHARPENED) or replacement use (for KILLED). Then two short sections:
+
+- **Salvage:** killed claims are not waste — a crowded cell is market/research validation. State how each killed claim converts ("the field is investing heavily in exactly this" beats false uniqueness in front of any reviewer).
+- **Audit score:** how many verdicts differed from the blind priors, stated plainly. This is the honest measure of what the sweep added beyond the model's memory.
+
+## Process exposure
+
+Content-descriptive headings; no naming of this skill or its phases in the deliverable; if the user asks how the audit was done, explain fully and accurately. State the scope boundary when relevant: the audit reads the indexed record — it is strongest in literature-heavy domains and weakest where knowledge lives in practice, paywalls, or unindexed languages.
