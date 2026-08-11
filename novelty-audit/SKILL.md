@@ -9,11 +9,11 @@ Every novelty claim will eventually face an adversary whose entire job is one se
 
 ## Phase 1 — Extract the claims
 
-List every explicit or implicit novelty claim in the input (a document, a pitch, or a stated idea). Implicit ones count: "we are the only", "unlike existing solutions", "there is no tool that", a gap statement in a paper, a differentiation slide. Number them. If the user supplied a topic rather than a document, ask what is being claimed as new, or derive the 2–4 strongest implied claims and confirm them in one line.
+List every explicit or implicit novelty claim in the input (a document, a pitch, or a stated idea). Implicit ones count: "we are the only", "unlike existing solutions", "there is no tool that", a gap statement in a paper, a differentiation slide. Number them. If the user supplied a topic rather than a document, ask what is being claimed as new, or derive the 2–4 strongest implied claims and confirm them in one line. State once in the deliverable: the audit verifies claims against the world's indexed record and assumes each claim is true of the user's own product or work — whether the described feature or capability actually exists is the user's side of the ledger, not the audit's.
 
 ## Phase 2 — Blind priors (before any search)
 
-For each claim, state your own belief BEFORE searching: FULL (counterexamples exist), EMPTY (genuinely unclaimed), or UNKNOWN — with one line of reasoning and a confidence (low/med/high). This is the control: the audit's value is measured by how many verdicts differ from these priors. Never skip or backfill this step; committed priors are what make the final report honest.
+For each claim, state your own belief BEFORE searching: FULL (counterexamples exist), EMPTY (genuinely unclaimed), or UNKNOWN — with one line of reasoning and a confidence (low/med/high). **Write the priors into the output before issuing the first search** — priors held in reasoning and transcribed afterward are substantively honest but not mechanically auditable, and auditability is the point. This is the control: the audit's value is measured by how many verdicts differ from these priors. Never skip or backfill this step.
 
 ## Phase 3 — Adversarial sweep
 
@@ -22,6 +22,7 @@ For each claim, 1–3 queries designed to FIND the counterexample, not to confir
 - Validate each query's aim: state in one line what distribution it measured; a query that returned adjacent marketing or a different actor's problem is MISFIRED and excluded.
 - Match on mechanism, not vocabulary: a counterexample described in different words still kills the claim.
 - Include at least one query in the claim's home language/region when the claim is regional.
+- **Recall valve:** if the first round finds nothing against a claim, run one second round with reworded or broadened queries before issuing any verdict — mandatory for any claim heading toward SURVIVES or UNTRIAGED. A single round's silence is weak evidence, and the strongest counterexample often hides one rewording away.
 
 ## Phase 4 — Verdicts
 
