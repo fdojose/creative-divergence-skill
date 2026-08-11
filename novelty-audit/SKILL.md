@@ -19,10 +19,10 @@ For each claim, state your own belief BEFORE searching: FULL (counterexamples ex
 
 For each claim, 1–3 queries designed to FIND the counterexample, not to confirm emptiness — search as the hostile reviewer would. Rules inherited from tested ancestors:
 
-- Validate each query's aim: state in one line what distribution it measured; a query that returned adjacent marketing or a different actor's problem is MISFIRED and excluded.
+- Validate each query's aim: one numbered line per query, adjacent to that query — never an aggregate paragraph covering several, and the count of aim lines must equal the count of queries run. A query that returned adjacent marketing or a different actor's problem is MISFIRED and excluded.
 - Match on mechanism, not vocabulary: a counterexample described in different words still kills the claim.
 - Include at least one query in the claim's home language/region when the claim is regional.
-- **Recall valve:** if the first round finds nothing against a claim, run one second round before issuing any verdict — mandatory for any claim heading toward SURVIVES or UNTRIAGED. The second round must CHANGE VOCABULARY FRAMES, not merely reword: if round one searched concept words (the mechanism, the category, the outcome), round two searches artifact words — vendor and product names, pricing-page language, "companies that", "platform for", marketplace and directory terms. A synonym of a query that found nothing finds nothing; the strongest counterexample usually lives one frame away, in the words its seller uses rather than the words its analyst would.
+- **Recall valve:** if the first round finds nothing against a claim, run one second round before issuing any verdict — mandatory for any claim heading toward SURVIVES or UNTRIAGED. The second round must CHANGE VOCABULARY FRAMES, not merely reword: if round one searched concept words (the mechanism, the category, the outcome), round two searches artifact words — vendor and product names, pricing-page language, "companies that", "platform for". For commercial claims, round two must include at least one software-directory or marketplace query (G2, Capterra, product directories, "site-style" category listings) — some occupants live in directories, not in search-phrase space, and three rounds of phrasing discipline cannot reach a cell that a different index holds. A synonym of a query that found nothing finds nothing; the strongest counterexample usually lives one frame — or one index — away.
 
 ## Phase 4 — Verdicts
 
@@ -31,7 +31,7 @@ Each claim gets exactly one verdict, with evidence:
 - **KILLED** — a counterexample exists; cite it. Include the strongest one found, not the first.
 - **SHARPENED** — the broad claim dies but a narrower edge survives (region, mechanism, combination, regulatory context). Rewrite the claim to its defensible form; cite what killed the broad version and what the sweep found nothing against.
 - **UNTRIAGED** — nothing found, but absence is not yet evidence: state which of the three empty-cell causes remains unexcluded (unexplored / explored-and-died / invisible to the index: other language, practice-only, paywalled) and the single cheapest step that would triage it (a regional query, an expert to ask, a database to check).
-- A claim only earns **SURVIVES** after a graveyard pass: search for failed attempts ("X failed", "X shut down", "X challenges") — a space can be empty because it is a graveyard, and claiming a graveyard as whitespace is the second-most embarrassing outcome available.
+- A claim only earns **SURVIVES** after a graveyard pass: search for failed attempts ("X failed", "X shut down", "X challenges") — a space can be empty because it is a graveyard, and claiming a graveyard as whitespace is the second-most embarrassing outcome available. The graveyard pass inherits the regional rule: a regional claim's graveyard must be searched in the claim's language and region — a global graveyard sweep cannot support "no failed local attempt".
 
 Never promote absence to proof. "Not found" means "not the consensus of the indexed record", nothing more. Every KILLED and SHARPENED verdict must carry a citation; a verdict without evidence is a prior wearing a costume.
 
