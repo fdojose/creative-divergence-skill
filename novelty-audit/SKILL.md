@@ -1,6 +1,6 @@
 ---
 name: novelty-audit
-description: An adversarial verification protocol for novelty and whitespace claims. Use whenever a document, pitch, grant application, paper, or plan asserts that something is new, unexplored, "first", "nobody does this", or a market/research gap — before it is published or submitted. Also use when the user asks to check whether an idea already exists, find prior art, or map the whitespace around a topic. The deliverable is a per-claim verdict with citations, not new ideas. Do NOT use for generating ideas (that is creative-divergence's job) or for general fact-checking of non-novelty claims.
+description: An adversarial verification protocol for novelty and whitespace claims. Use whenever a document, pitch, grant application, paper, or plan asserts that something is new, unexplored, "first", "nobody does this", or a market/research gap — before it is published or submitted. Also use when the user asks to check whether an idea already exists, find prior art, or map the whitespace around a topic. The deliverable is a per-claim verdict with citations, not new ideas. Do NOT use for generating ideas (that is creative-divergence's job), for general fact-checking of non-novelty claims, or for plagiarism/text-similarity checks — the audit adjudicates claims, not prose.
 ---
 
 # Novelty Audit
