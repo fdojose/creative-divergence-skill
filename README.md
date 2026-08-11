@@ -46,6 +46,14 @@ Three eval iterations, each running realistic prompts through paired subagents (
 
 The version history of this repo mirrors those iterations — see the commit log.
 
+## Companion skill: novelty-audit
+
+`novelty-audit/` is the verification half of the pair: creative-divergence generates the non-obvious; novelty-audit adversarially checks what is actually new. It runs the hostile reviewer's search *before* the reviewer does — extracting every explicit and implicit novelty claim, committing blind priors to disk before any search (the control that makes its audit score honest), sweeping adversarially with per-query aim validation, and issuing per-claim verdicts (KILLED / SHARPENED / UNTRIAGED / SURVIVES-after-graveyard) with citations. Absence is never promoted to proof.
+
+It was born from a failed experiment: a pre-registered search extension for creative-divergence missed its kill condition (average +1.5 non-modal survivors vs. the required ≥2), but its data showed exactly where search *does* add value — verifying literature-adjacent claims, where ideas that feel novel are often published consensus. Four eval iterations hardened it (13–16 in the shared eval program): written-before-search priors are byte-auditable in 8/8 runs; the recall valve must change vocabulary frames, not reword; commercial claims get a mandatory software-directory query; the graveyard pass inherits the regional-language rule. Its known limit is documented rather than hidden: a four-iteration hunt for one known counterexample ended at a tool boundary (web search cannot traverse directory listings), where the protocol correctly refuses SURVIVES and hands the user a triage step instead.
+
+Install it the same way: copy `novelty-audit/` into your skills directory.
+
 ## License
 
 MIT
