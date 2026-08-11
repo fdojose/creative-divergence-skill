@@ -22,7 +22,7 @@ For each claim, 1–3 queries designed to FIND the counterexample, not to confir
 - Validate each query's aim: state in one line what distribution it measured; a query that returned adjacent marketing or a different actor's problem is MISFIRED and excluded.
 - Match on mechanism, not vocabulary: a counterexample described in different words still kills the claim.
 - Include at least one query in the claim's home language/region when the claim is regional.
-- **Recall valve:** if the first round finds nothing against a claim, run one second round with reworded or broadened queries before issuing any verdict — mandatory for any claim heading toward SURVIVES or UNTRIAGED. A single round's silence is weak evidence, and the strongest counterexample often hides one rewording away.
+- **Recall valve:** if the first round finds nothing against a claim, run one second round before issuing any verdict — mandatory for any claim heading toward SURVIVES or UNTRIAGED. The second round must CHANGE VOCABULARY FRAMES, not merely reword: if round one searched concept words (the mechanism, the category, the outcome), round two searches artifact words — vendor and product names, pricing-page language, "companies that", "platform for", marketplace and directory terms. A synonym of a query that found nothing finds nothing; the strongest counterexample usually lives one frame away, in the words its seller uses rather than the words its analyst would.
 
 ## Phase 4 — Verdicts
 
