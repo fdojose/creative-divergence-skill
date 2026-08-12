@@ -1,6 +1,6 @@
 ---
 name: explore-verify-loop
-description: An orchestrator that composes the novelty-audit and creative-divergence skills into one pipeline for innovation work on a product, strategy, or research direction. Use when the user wants to both understand what already exists AND generate differentiated options — "what should we build here", "find our angle in this market", "we want to enter/differentiate/innovate in X". Requires web search and both component skills. Do NOT use for a pure existence check (novelty-audit alone) or pure ideation on a private/un-indexed problem (creative-divergence alone).
+description: An orchestrator that composes the novelty-audit and creative-divergence skills into one pipeline for innovation work on a product, strategy, or research direction. Use when the user wants to both understand what already exists AND have new differentiated options generated for them — "what should we build here", "find our angle in this market", "we want to enter/differentiate/innovate in X". Requires web search and both component skills. Do NOT use for a pure existence check — "does this already exist", "has anyone published this", "find prior art" — even when the user plainly has a product or paper in mind: bringing an idea to be checked is not asking for new ones, and that case belongs to novelty-audit alone. Do NOT use for pure ideation on a private or un-indexed problem (creative-divergence alone).
 ---
 
 # Explore-Verify Loop
