@@ -54,6 +54,24 @@ It was born from a failed experiment: a pre-registered search extension for crea
 
 Install it the same way: copy `novelty-audit/` into your skills directory.
 
+## Orchestrator: explore-verify-loop
+
+`explore-verify-loop/` composes the two skills into one pipeline for the question they only half-answer alone: *what should we build here?* Stage 1 maps the terrain with novelty-audit's discipline (written priors before any search, so the terrain can't be back-fitted to what the search happened to return). Stage 2 runs creative-divergence **against that terrain** — the verified map becomes the empirical modal baseline, with an anchoring guard and a blind-regeneration valve for when the map crowds out the generation. Stage 3 turns the audit back on the loop's own survivors, enumerated from the final deliverable table so late-synthesized fusions and wild cards can't slip past.
+
+The composition earns its cost on one measured axis. In the first eval round, the unaudited control shipped 8 of 8 claims that die or narrow under verification, every one presented unqualified; the loop shipped 1 — and that single leak came from the fusion hole Stage 3 was then rewritten to close. The runs' own confessions are the clearest evidence it works: *"One of our three lead options died under verification … which is exactly why the verification pass exists."* Anchoring, pre-registered as the thing most likely to sink the design, proved real but small, and the guard closed it exactly (15 mechanism families with the digest, 15 without).
+
+Five eval iterations (17–21 in the shared program), each a paired two-prompt round graded by an independent agent against transcript byte-offsets:
+
+- **Iteration 17** (v1, first round): the false-novelty metric succeeded decisively and the pre-registered kill condition was not met, but two systematic composition defects surfaced — late-synthesized survivors escaping Stage 3 (the fusion led a recommendation with an unaudited claim the grader killed in one search), and universal negatives leaking into the memo.
+- **Iteration 18** (v2): both fixes confirmed, 11/12 in both runs. The remaining miss was the aim-line rule, *narrated rather than executed* — 0 numbered aim lines against 17 searches in one run, 3 of 12 in the other.
+- **Iteration 19** (v2.1): 9/10 and 8/10. The aim-line rule wasn't being disobeyed so much as it was unimplementable: agents dispatch searches in parallel batches, so "one aim line immediately before each search" has no moment at which to be obeyed. A separate leak appeared — Stage 3's graveyard gate silently dropped despite three narrowed survivals.
+- **Iteration 20** (v2.2): the per-stage graveyard gate confirmed fixed in both runs, including one *explicit* vacuous waiver — the never-silent behavior the rule demands. The rewritten batch-aim rule still failed both runs (14/18 and 10/20 searches listed), and the cause was diagnostic: aims were drafted inside extended thinking, surfacing only from Stage 3 onward.
+- **Iteration 21** (v2.3): one added sentence — the aim list is an *emitted* artifact, because "an accountability artifact that lives where no audit can see it does not exist" — flipped it at exact parity from the first batch. 36 aim lines / 36 searches and 19 / 19, each list byte-preceding its own batch, verified by parsing thinking blocks and text blocks apart. 10/10 and 9/10.
+
+The general lesson is now pinned three times over in this repo's history: **a compliance rule must specify where the artifact appears, not only what it contains** — otherwise it drifts into reasoning and quietly stops being auditable. The one open instance is documented rather than hidden: iteration 21's single failure is that same class surfacing in creative-divergence's own tag rule, where one run's 19 approaches lived only in thinking.
+
+Requires web search and both component skills installed. Cost runs ~1.6–1.9× the tokens and 3–4× the wall-clock of an unverified answer, which is why the skill scales its own depth down for small questions.
+
 ## License
 
 MIT
